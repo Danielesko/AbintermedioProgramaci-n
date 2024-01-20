@@ -7,9 +7,9 @@ if($nombre == "" || $correo == "" || $mensaje == ""){
     ?>
     <script>
         alert("No puedes enviar datos vacíos");
+        window.location.href = "pages/contacto.html";
     </script>
     <?php
-    header("location:pages/contacto.html");
 } else {
     $conn = new mysqli("localhost", "root", "9455", "abintermedia programacion");
 
@@ -19,16 +19,24 @@ if($nombre == "" || $correo == "" || $mensaje == ""){
 
     $stmt = $conn->prepare("INSERT INTO contacto (correo, nombre, mensaje) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $correo, $nombre, $mensaje);
-    $stmt->execute();
+    
+    if ($stmt->execute()) {
+        ?>
+        <script>
+            alert("Mensaje enviado correctamente");
+            window.location.href = "pages/contacto.html";
+        </script>
+        <?php
+    } else {
+        ?>
+        <script>
+            alert("Error al enviar el mensaje");
+            window.location.href = "pages/contacto.html";
+        </script>
+        <?php
+    }
+
     $stmt->close();
     $conn->close();
-    ?>
-    <script>
-        alert("Mensaje enviado correctamente");
-    </script>
-    <?php
-    header("location:pages/contacto.html");
 }
-
-
 ?>
