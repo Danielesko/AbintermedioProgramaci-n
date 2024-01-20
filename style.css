@@ -1,6 +1,6 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1920px;
+    max-width: 100%;
 }
 body{
     background-color: white;
@@ -151,25 +151,44 @@ p{
     width: 15%;
     margin-left: 1.5%;
 }
-footer{
-    background-color: black;
+footer {
     color: white;
-    width: 100%;
+    background: linear-gradient(to right, #ff0000, #800000);
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.linksfooter {
+    text-align: center;
+    width: 33.33%; 
+}
+
+.linksfooter a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.imgfooter {
+    width: 33.33%; 
+}
+
+.imgfooter img {
+    width: 100%;
+}
+footer div:last-child {
+    width: 33.33%; 
     text-align: center;
 }
-footer div{
-    width: 30%;
-    margin-top: 2%;
-    margin-left: 2.5%;
+
+footer div:last-child h4 {
+    margin-bottom: 10px;
 }
-footer a{
-    color: white;
-    font-size: 2em;
-}
-.imgfooter{
-    margin-top: 10%;
-}
-.linksfooter{
-    margin-top: 20%;
+
+footer div:last-child p {
+    margin-bottom: 5px;
+    font-size: 1.1em;
 }
