@@ -22,7 +22,7 @@ body{
 }
 .navbar a:hover{
     color: orange;
-    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.5);
 }
 .logonav{
     transition: transform 0.5s;
@@ -33,6 +33,25 @@ body{
 .logonav:hover {
     transform: rotate(360deg);
 }
+.boton {
+    display: inline-block;
+    background: linear-gradient(to right, #ff0000, #800000);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.boton:hover {
+    background-color: #ff4500;
+    transform: scale(1.1);
+}
+
+
+
 .caja1{
     margin-left: 10% !important;
 }
