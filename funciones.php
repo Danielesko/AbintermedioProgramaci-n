@@ -11,7 +11,7 @@ if($nombre == "" || $correo == "" || $mensaje == ""){
     <?php
     header("location:pages/contacto.html");
 } else {
-    $conn = new mysqli("localhost", "usuario", "contraseña", "basededatos");
+    $conn = new mysqli("localhost", "root", "9455", "abintermedia programacion");
 
     if ($conn->connect_error) {
         die("La conexión a la base de datos falló: " . $conn->connect_error);
