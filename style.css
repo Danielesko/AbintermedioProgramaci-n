@@ -5,77 +5,33 @@ html{
 body{
     background-color: white;
 }
-.navbar1 a, .navbar4 a{
-    text-decoration: none;
-    color:aqua;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.navbar1 a:hover, .navbar4 a:hover{
-    color:violet;
-}
-.navbar1 a:active, .navbar4 a:active{
-    color:green;
-}
-/* a:visited{
-    color:red;
-} */
-.navbar1{
+.navbar{
+    list-style: none;
     background: linear-gradient(to right, #ff0000, #800000);
-    position: relative;
-    height: 3em;
-    text-align: right;
-    padding-top: 1%;
-}
-.navbar1 a{
-    margin-right: 2%;
-}
-.navbar2{
-    background: linear-gradient(to right, green, blue);
     display: flex;
-    border: solid 1px;
-}
-.navbar2 img{
-    height: 2em;
-    width: 2em;
-    margin-left: 3%;
-}
-.navbar2 button{
-    margin-left: 58%;
-}
-.navbar2 form{
-    padding-top: 0.4%;
-    margin-left: 3%;
-}
-.navbar3{
-    margin-top: 3%;
-    background: linear-gradient(to right, orange, pink);
-    height: 3em;
-    display: flex;
-}
-.navbar4{
-    background: linear-gradient(to right, black, white);
-    height: 3em;
-    padding-bottom: 2%;
-    text-align: center;
-    border: solid 1px;
-}
-.navbar4 img{
-    margin-right: 3%;
-}
-.navbar4 a{
-    margin-left: 3%;
-}
-.navbar3 a{
-    width: 20em;
-    border: 1px solid red;
-    background-color: grey;
-    color:white;
-    font-size: 1em;
     justify-content: space-between;
-    margin-left: 3%;    
-    padding: 1%;
-    text-align: center;
+    align-items: center;
+    padding: 10px; 
+}
+.navbar li{
+    margin-right: 25%;
+}
+.navbar a{
     text-decoration: none;
+    color: white;
+}
+.navbar a:hover{
+    color: orange;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+}
+.logonav{
+    transition: transform 0.5s;
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+.logonav:hover {
+    transform: rotate(360deg);
 }
 .caja1{
     margin-left: 10% !important;
