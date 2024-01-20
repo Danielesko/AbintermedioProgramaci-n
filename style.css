@@ -20,7 +20,7 @@ body{
     color:red;
 } */
 .navbar1{
-    background-color: grey;
+    background: linear-gradient(to right, #ff0000, #800000);
     position: relative;
     height: 3em;
     text-align: right;
@@ -30,7 +30,7 @@ body{
     margin-right: 2%;
 }
 .navbar2{
-    background-color: grey;
+    background: linear-gradient(to right, green, blue);
     display: flex;
     border: solid 1px;
 }
@@ -48,12 +48,12 @@ body{
 }
 .navbar3{
     margin-top: 3%;
-    background-color: pink;
+    background: linear-gradient(to right, orange, pink);
     height: 3em;
     display: flex;
 }
 .navbar4{
-    background-color: grey;
+    background: linear-gradient(to right, black, white);
     height: 3em;
     padding-bottom: 2%;
     text-align: center;
